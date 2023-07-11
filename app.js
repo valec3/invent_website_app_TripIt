@@ -17,8 +17,8 @@ var swiper = new Swiper(".image-slider", {
     },
 });    
 
-let menu = document.querySelector('#menu-bar');
-let navbar = document.querySelector('.navbar');
+const menu = document.querySelector('#menu-bar');
+const navbar = document.querySelector('.navbar');
 
 menu.addEventListener('click', () =>{
     menu.classList.toggle('fa-times');
