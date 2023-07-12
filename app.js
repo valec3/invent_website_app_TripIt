@@ -1,4 +1,4 @@
-var swiper = new Swiper(".image-slider", {
+var swiper = new Swiper(".home__swiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -10,7 +10,7 @@ var swiper = new Swiper(".image-slider", {
         modifier: 2,
         slideShadows: true,
     },
-    loop:true,
+    loop:true, 
     autoplay: {
         delay: 2000,
         disableOnInteraction: false,
