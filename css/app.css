@@ -5,7 +5,7 @@
     --dark:#272D3B;
     --red:#ED176F;
     --coral:#F7817F;
-    --gradient:linear-gradient(90deg, #3f5ee8, #147);
+    --gradient:linear-gradient(90deg, #3f5ee8, rgb(84, 158, 231));
     --blue:#19A7CE;
     --white:#F6F1F1;
     --blue_light:#AFD3E2;
@@ -138,6 +138,51 @@ html{
     width: 100%;
     height: 100%;
 }
+/* FEATURES */
+.heading{
+    text-align: center;
+    color: transparent;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+.features .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.features .box-container .box{
+    margin: 1rem;
+    border-radius: .3rem;
+    text-align: center;
+    background: rgba(28, 59, 200, 0.067);
+    cursor: pointer;
+    flex: 1 1 24rem;
+}
+.features .box-container .box i{
+    color: var(--dark);
+    font-size: 4rem;
+    padding: .7rem;
+}
+.features .box-container .box h3{
+    color: var(--blue);
+    font-size: 2.2rem;
+}
+.features .box-container .box p{
+    color: rgb(37, 39, 44);
+    font-size: 1.2rem;
+    padding: .7rem;
+}
+.features .box-container .box:hover{
+    background: var(--gradient);
+}
+.features .box-container .box:hover > *{
+    color: var(--white);
+}
 
 /* ABOUT */
 /* CONTACT */
@@ -160,9 +205,15 @@ html{
     /* home */
     .home{
         padding: 0 .5rem;
+        max-width: 100vw;
     }
 }
 @media (max-width: 768px){
+
+    /* general */
+    .heading{
+        font-size: 2.6rem;
+    }
     /* mq header   */
     .header{
         color: #272D3B;
@@ -221,6 +272,10 @@ html{
     }
     .header .navbar{
         gap: 1.2rem;
+    }
+
+    .heading{
+        font-size: 2.5rem;
     }
 }
 
