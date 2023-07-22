@@ -32,6 +32,9 @@ html{
     scroll-padding-top: 4rem;
     font-family: 'Nunito', sans-serif;
 }
+body{
+    overflow: hidden;
+}
 
 .container{
     padding: 0 9%;
@@ -71,8 +74,9 @@ html{
 }
 
 .header .logo{
-    font-weight: bold;
     color: var(--white);
+    font-weight: bold;
+    margin: 0;
     font-size: 1.5rem;
 }
 .header .navbar {
@@ -114,7 +118,8 @@ html{
     width: 100%;
     
 }
-.home__content h3{
+.home__content h1{
+    margin: 0;
     font-size: 5rem;
     color: var(--blue);
 }
@@ -185,6 +190,74 @@ html{
 }
 
 /* ABOUT */
+
+.about .row{
+    display:  flex;
+    align-items:  center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about .row .img-container{
+    flex: 1 1 36rem;
+}
+.about .row .img-container img{
+    width: 100%;
+}
+.about .row .content{
+    flex: 1 1 36rem;
+}
+.about .row .content h3{
+    color: var(--dark);
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.about .row .content p{
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.about .row .content .buttons{
+    padding: .5rem 0;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.about .row .content .buttons a:hover{
+    opacity: .7;
+}
+/* usage */
+.usage .row{
+    display: flex;
+    align-items: center;
+}
+.usage .row .divider{
+    padding: 0 1rem;
+}
+.usage .row .box-container .box{
+    padding: 1rem 0;
+}
+.usage .row .box-container .box i{
+    color: var(--blue);
+    padding: 1rem 0;
+    font-size: 4rem;
+}
+.usage .row .box-container .box h3{
+    color: var(--dark);
+    font-size: 2rem;
+}
+.usage .row .box-container .box p{
+    color: #666;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.usage .row .box-container:first-child{
+    text-align: right;
+}
+/* REVIEW */
+.review .box-container{
+    display: flex;
+}
 /* CONTACT */
 /* FOOTER */
 
@@ -206,6 +279,21 @@ html{
     .home{
         padding: 0 .5rem;
         max-width: 100vw;
+    }
+    /* about */
+    .about{
+        flex-direction: column;
+    }
+    /* usage */
+    .usage .row .divider{
+        display: none;
+    }
+    .usage .row{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .usage .row .box-container .box{
+        text-align: center;
     }
 }
 @media (max-width: 768px){
@@ -264,6 +352,13 @@ html{
     }
     .home__content p{
         font-size: 1.2rem;
+    }
+    /* about */
+    .about .row .content .buttons{
+        padding: 1rem 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
 @media (max-width: 400px){
