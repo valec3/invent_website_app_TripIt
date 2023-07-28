@@ -53,7 +53,7 @@ body{
 }
 
 .btn:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 
@@ -114,7 +114,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 6rem 3rem 0 3rem;
+    padding: 8rem 3rem 0 3rem;
     width: 100%;
     
 }
@@ -128,7 +128,7 @@ body{
     color: var(--white);
     padding: 1rem 0;
 }
-    /* swiper */
+/* swiper */
 .home__swiper{
     width: 100%;
     padding: 5rem 0;
@@ -257,6 +257,85 @@ body{
 /* REVIEW */
 .review .box-container{
     display: flex;
+    align-items:  center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review .box-container .box{
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem;
+    flex: 1 1 20rem;
+    border: .5px solid rgba(120, 65, 65, 0.3);
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, .06);
+    border-radius: .5rem;
+}
+
+.review .box-container .box img{
+    height: 9rem;
+    width: 9rem;
+    padding: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review .box-container .box h3{
+    font-size: 2rem;
+}
+.review .box-container .box p{
+    font-size: 1rem;
+}
+.review .box-container .box .stars{
+    padding: 1rem .1rem;
+    font-size: 1.4rem;
+    color: var(--blue);
+}
+
+
+/* PRICING */
+.pricing .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pricing .box-container .box{
+    flex: 1 1 20rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1.6rem 0;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+.pricing .box-container .box .btn{
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+}
+.pricing .box-container .box .price{
+    font-size: 3rem;
+    color: var(--dark);
+    font-weight: bolder;
+}
+.pricing .box-container .box .price span{
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.pricing .box-container .box h3{
+    color: #fff;
+    background: var(--gradient);
+    font-size: 2.4rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+.pricing .box-container .box ul{
+    padding: 1.5rem;
+    border-bottom: .1rem solid var(--blue);
+}
+.pricing .box-container .box ul li{
+    padding: .2rem 0 ;
+    font-size: 1.1rem;
+    color: #666;
 }
 /* CONTACT */
 /* FOOTER */
