@@ -338,6 +338,53 @@ body{
     color: #666;
 }
 /* CONTACT */
+
+.contact{
+    background: linear-gradient(#fff 50%,var(--dark) 50.1%);
+}
+.contact .form{
+    padding: 1.6rem;
+    background: #fff;
+    box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .1);
+}
+
+.contact .form .inputBox{
+    position: relative;
+}
+.contact .form .inputBox input,
+.contact .form .inputBox textarea{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-bottom: .2rem solid rgba(0, 0, 0, .3);
+    font-size: 1.4rem;
+    text-transform: none;
+}
+.contact .form .inputBox textarea{
+    resize: none;
+    height: 12rem;
+}
+.contact .form .inputBox input:focus,
+.contact .form .inputBox textarea:focus{
+    border-color: var(--blue);
+}
+
+.contact .form .inputBox label{
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    position: absolute;
+    top: 2.1rem;
+    left: 0;
+}
+.contact .form .inputBox input:focus ~ label,
+.contact .form .inputBox textarea:focus ~ label,
+.contact .form .inputBox input:valid ~ label,
+.contact .form .inputBox textarea:valid ~ label{
+    top: -.3rem;
+    font-size: 1.2rem;
+    color: var(--blue);
+}
+
 /* FOOTER */
 
 
