@@ -105,7 +105,7 @@ a{
 }
 /* HOME */
 .home{
-    background: url("/images/home-bg.jpg");
+    background: url("../images/home-bg.jpg") #000;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
