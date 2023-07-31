@@ -29,3 +29,25 @@ window.onscroll = () =>{
     menu.classList.remove('fa-times');
     navbar.classList.remove('nav-toggle');
 }
+
+const inputElement = document.querySelector('#correo');
+const lbl_inputElement = document.querySelector('#lbl_correo');
+const form = document.querySelector('.form');
+
+form.addEventListener("submit",(e)=>{
+    e.preventDefault();
+})
+function verificarContenido() {
+    const valor = inputElement.value.trim();
+
+    if (valor === '') {
+        // El input está vacío
+        lbl_inputElement.classList.remove("cont");
+    } else {
+        // El input tiene contenido
+        lbl_inputElement.classList.add("cont");
+    }
+}
+
+// Evento que se ejecuta cuando se produce un cambio en el input
+inputElement.addEventListener('change', verificarContenido);
